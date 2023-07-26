@@ -1,0 +1,113 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(90deg, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+*{
+    box-sizing: border-box;
+}
+.bubble{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8cm;
+    height: 8cm;
+    background: linear-gradient(90deg, #434343,#222020);
+    z-index: -1;
+    border-bottom-right-radius: 80%;
+    transition: all 2s ease-in-out;
+}
+header{
+    width: 100%;
+    max-width: 100%;
+    padding: 1.3cm 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.logo{
+    font-size: 25px;
+}
+.h-g-c{
+    width: 86%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.m-container{
+    width: 14cm;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+    transition: all .3s ease-in-out ;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+.menu li:hover{
+    border-bottom: 4px solid #ffffff;
+    color: #000000;
+}
+.content-container{
+    margin-top: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.c-mini-c{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.first-img{
+    width: 400px;
+    height: 400px;
+}
+.first-img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.song-design{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.song-design div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 875px){
+    .bubble{
+        width: 80vh;
+        height: 80vh;
+    }
+    .c-mini-c{
+        flex-wrap: wrap;
+    }
+    .m-container{
+        display: none;
+    }
+    .content-container{
+        margin-top: 2vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .bubble{
+        width: 100vh;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
